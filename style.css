@@ -1,0 +1,310 @@
+/* Reglas generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: google;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1; 
+}
+#header{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.78) ;
+    padding: 10px;
+    position: relative;      
+}
+#logo-header{
+    width: 9%;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    padding-left: 20%;  
+    
+}
+.menu{
+    
+    font-size: 20px;
+    color: #104c9c;
+    font-family: google;
+    padding: 20px;  
+    font-weight: 400;
+}
+.menu:hover{
+    color: #78ccf4; 
+}
+@font-face {
+    font-family: google;
+    src: url(fuentes/Fredoka-VariableFont_wdth\,wght.ttf);
+}
+
+/* tu contenido */
+.seccion{
+    width: 100%;
+    height: 840px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenido{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    
+    
+}
+.contenido p{
+    font-family: google;
+    font-size: 65px;
+    font-weight: 100;
+    color: white; 
+}
+
+#menu-principal{
+    background-image: url(imagenes/hospital_fondo.jpg.jpg);
+    background: linear-gradient(90deg, rgba(20, 51, 92, 0.9) 40%,rgba(60, 143, 182, 0.7)  100%),url(imagenes/hospital_fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#carrusel{
+    width: 65%;
+    height: 80%;
+    display: flex;
+}
+
+#carrusel img{
+    width: 0px;
+    flex-grow: 1; 
+    object-fit: cover;
+    opacity: .8;
+    filter: contrast(80%);
+    transition: all 0.8s ease ; 
+}
+#carrusel img:hover{
+    width: 40%;
+    opacity: 1;
+    filter: contrast(100%);
+}
+
+/* Seccion 2 */
+
+#seccion2{
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+}
+#contenedor{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#contenedor h2{
+    font-family: google;
+    font-weight: 500  ;
+    font-size: 40px;
+    color: #104c9c;
+    margin: 30px;
+}
+
+#comentario-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+.contenido-box{
+    width: 33%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    
+    padding: 20px;
+    margin: 25px;
+}
+.usuario{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img-usuario{
+    width: 15%;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.img-usuario img{
+    width:100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nombre-usuario{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    
+    margin-left: 20px;
+}
+.nombre-usuario strong{
+    font-family: google;
+    font-weight: 500;
+    font-size: 20px;
+}
+.nombre-usuario span{
+    font-family: google;
+    color: grey;
+}
+#seccion3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-image: url(imagenes/form-fondo.png);
+    /*background: linear-gradient(90deg, rgba(20, 51, 92, 0.9) 40%,rgba(60, 143, 182, 0.7)  100%),url(imagenes/form-fondo.png);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#agendar{
+    width: 40%;
+    padding: 50px;
+    margin: 40px;
+    background-color: #f0f0f0b6;
+    border-radius: 15px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+
+
+}
+#agendar h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+#agendar h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#agendar h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+.contacto img{
+    width: 32px;
+    height: 32px;
+}
+.contacto div{
+    margin: 20px;
+}
+.contacto div p{
+    font-size: 17px;
+}
+
+.horario{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+.horario div{
+    margin: 10px;
+    width: 48%;
+}
+
+#formulario-contenedor{
+    width: 40%;
+}
+#formulario{
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+.datos-personales{
+    width: 45%;
+    padding: 21px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 15px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+
+.mensaje{
+    width: 90%;
+    height: 150px;
+    padding: 21px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: 15px;
+    background-color: #f0f0f0;
+    
+    
+}
+#formulario div{
+    padding: 10px;
+    width: 100%;
+}
+#formulario div span{
+    color: #104c9c;
+    font-weight: 500;
+}
+#enviar{
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    color: #ffffff;
+    background-color: #104c9c;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}

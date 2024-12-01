@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Suiza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/logo-icono.ico">
+</head>
+<body>
+    <!--menu principal -->
+    <main>
+        <header>
+            <nav id="header">
+                <img id="logo-header" src="imagenes/logo.png">
+                <ul id="menu">
+                    <li><a class="menu" href="staff medico/index.html" target="_blank">Staff medico</a></li>
+                    <li><a class="menu" href="">Servicios</a></li>
+                    <li><a class="menu" href="">Especialidades</a></li>
+                    <li><a class="menu" href="Sedes/index.html" target="_blank" >Sedes</a></li>
+                    <li><a class="menu" href="Nosotros/index.html" target="_blank">Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!--contenido -->
+        
+        <section class="seccion" id="menu-principal">
+            <div class="contenido">
+                <p>En</p>
+                <p>Clinica Suiza,</p>
+                <p>Tu salud es</p>
+                <p>nuestra prioridad</p>
+            </div>
+            <div  id="carrusel">
+                <img src="imagenes/staff-medico.jpg">
+                <img src="imagenes/servicios-medicos.jpg">
+                <img src="imagenes/especialidades.jpg">
+                <img src="imagenes/sede.jpg">
+            </div>
+        </section>
+        <section id="seccion2">
+            <div id="contenedor">
+                <h2>Nuestros pacientes hablan por nosotros</h2>
+                <div id="comentario-box">
+                    <div class="contenido-box">
+                        <div id="usuario1" class="usuario">
+                            <div class="img-usuario">
+                                <img src="imagenes/paciente1.jpg" id="img-usuario1">
+                            </div>
+                            <div  class="nombre-usuario">
+                                <strong>Jorge Castillo</strong>
+                                <span>@jorgecastillo01</span>
+                            </div>
+                        </div>
+                        <p>"Mi experiencia fue excelente desde el primer contacto. La organización y el trato humano del personal médico y administrativo hacen la diferencia. Además, me sorprendió la variedad de servicios que ofrecen. Sin duda, un hospital de primer nivel." </p>
+                    </div>
+                    <div class="contenido-box">
+                        <div id="usuario2" class="usuario">
+                            <div class="img-usuario">
+                                <img src="imagenes/paciente2.jpg" id="img-usuario1">
+                            </div>
+                            <div  class="nombre-usuario">
+                                <strong>María López</strong>
+                                <span>@marialz</span>
+                            </div>
+                        </div>
+                        <p>"La atención en este hospital es excepcional. Desde que llegué, el personal fue muy amable y profesional. Los médicos explicaron todo con claridad, y las instalaciones están impecables. Me sentí en buenas manos durante todo mi tratamiento."</p>
+                    </div>
+                    <div class="contenido-box">
+                        <div id="usuario3" class="usuario">
+                            <div class="img-usuario">
+                                <img src="imagenes/paciente3.jpg" id="img-usuario1">
+                            </div>
+                            <div  class="nombre-usuario">
+                                <strong>Sofía Ramírez</strong>
+                                <span>@sofiaRami</span>
+                            </div>
+                        </div>
+                        <p>"Fui para un chequeo de rutina y quedé muy satisfecha con la experiencia. Las enfermeras son muy pacientes y te hacen sentir cómodo en todo momento. Además, cuentan con tecnología de última generación. Definitivamente regresaré para mis próximos chequeos."</p>
+                    </div>
+                    <div class="contenido-box">
+                        <div id="usuario4" class="usuario">
+                            <div class="img-usuario">
+                                <img src="imagenes/paciente4.jpg" id="img-usuario1">
+                            </div>
+                            <div  class="nombre-usuario">
+                                <strong>Carlos Méndez</strong>
+                                <span>@carlosmdz</span>
+                            </div>
+                        </div>
+                        <p>"Tuve que ir a urgencias por un problema inesperado, y quedé impresionado con la rapidez y eficiencia del servicio. Los doctores no solo me atendieron rápido, sino que mostraron mucho interés en mi bienestar. Totalmente recomendable."</p>
+                    </div>
+                </div>
+        </section>
+        <section id="seccion3">
+            <section id="agendar">
+                <h3>Agendar cita</h3>
+                <h1>Reserva tu cita con nosotros</h1>
+                <p>Rellena por favor con tus datos, nos pondremos en contacto contigo lo mas antes posible</p>
+                <div class="contacto">
+                    <img src="imagenes/telefono.png" >
+                    <div>
+                        <p>Llamanos</p>
+                        <p>(01)456 3466</p>
+                    </div>
+                </div>
+                <div class="contacto">
+                    <img src="imagenes/correo.png" >
+                    <div>
+                        <p>Escribenos</p>
+                        <p>atencioalcliente@clinicasuiza.com</p>
+                    </div>
+                </div>
+                <h2>Horario de atención</h2>
+                <div class="horario">   
+                    <div>
+                        <h4>Lunes a viernes</h4>
+                        <p>8:00 am / 6:00 pm</p>
+                    </div>
+                    <div>
+                        <h4>Sabados</h4>
+                        <p>8:00 am / 1:00 pm</p>
+                    </div>
+                </div>
+            </section>
+            <section id="formulario-contenedor">
+                <section id="formulario">
+                    
+                    <input type="text" class="datos-personales" placeholder="Nombres*">
+                    <input type="text" class="datos-personales" placeholder="Apellidos*">
+                    <input type="text" class="datos-personales" placeholder="Telefono*">
+                    <input type="text" class="datos-personales" placeholder="Correo electronico*">
+                    <input type="text" class="mensaje" placeholder="Mensaje">
+                    
+                    <div>
+                        <p>(*) Campos obligatorios</p>
+                        <input type="checkbox" name="" id="">  Acepto las <span>politicas de privacidad</span>
+                    </div>
+                    <input type="submit" value="submit" id="enviar">
+                </section>
+            </section>
+        </section>
+    </main>
+    
+   
+</body>
+</html>
